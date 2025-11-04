@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="JavaSE-16" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="Tomcat 8.5.84" scope="PROVIDED"/>
+	<levels>
+		<level name="Java EE 6-Java EE 6" value="project"/>
+		<level name="Tomcat 8.5.84" value="application_server_libraries"/>
+	</levels>
+</component>
