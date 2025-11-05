@@ -14,7 +14,7 @@
 - 工具类：Apache Commons（文件上传、数据库连接池）
 
 ## 安装部署
-1. 克隆仓库：`git clone https://github.com/你的用户名/Student_32.git`
+1. 克隆仓库：`git clone https://github.com/ThcenGodZzz/Student_32.git`
 2. 配置数据库：修改`dbcpconfig.properties`中的数据库连接信息
 3. 部署到Tomcat：将项目打包为WAR包，放入Tomcat的webapps目录
 4. 启动Tomcat，访问`http://localhost:8080/webapp`
