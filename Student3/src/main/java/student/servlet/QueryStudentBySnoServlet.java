@@ -11,23 +11,23 @@ import student.service.IStudentService;
 import student.service.impl.StudentServiceImpl;
 
 public class QueryStudentBySnoServlet extends HttpServlet {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	request.setCharacterEncoding("UTF-8");
-	int sno = Integer.parseInt(request.getParameter("sno"));
-	IStudentService service = new StudentServiceImpl();
-	Student student = service.queryStudentBySno(sno);
-	request.setAttribute("student", student);//将查询到的request信息放在request域中
-	request.getRequestDispatcher("StudentInfo.jsp").forward(request,response);
-	}
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        int sno = Integer.parseInt(request.getParameter("sno"));
+        IStudentService service = new StudentServiceImpl();
+        Student student = service.queryStudentBySno(sno);
+        request.setAttribute("student", student);//将查询到的request信息放在request域中
+        request.getRequestDispatcher("StudentInfo.jsp").forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
 
 }
